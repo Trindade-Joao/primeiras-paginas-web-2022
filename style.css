@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Press+Start+2P&display=swap');
+
+:root {
+    --ocre-medio: #d5a370;
+    --bege:  #f5d4b3;
+    --texto-marrom  : #281c05;
+    --texto-marrom-medio: #483001;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    padding-top: 180px;
+    background: var(--bege);
+    
+}
+header {
+    position: fixed;
+    top:0;
+    
+    width: 100vw;
+}
+
+.caixa-header {
+    font-family:'Press Start 2P', cursive;
+    background: linear-gradient(#3180d4 0%, #1E59BD 100%);
+    background-image: url('./img/bg_header.png');
+    background-size: cover;
+    background-position: bottom;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+
+}
+.caixa-header img {
+    width: auto;    
+    margin: 15px 40px 20px;
+}
+
+.caixa-header h1 {
+    padding: 25px 0;
+    font-size: 4vw;
+    color: #FFF;
+    text-shadow: 5px 5px 0 #333;
+    
+}
+nav {
+    background: var(--ocre-medio) ;
+    padding: 0 0 10px 20px;
+}
+
+nav li {
+    display: inline;
+    font-size: 1.2em;
+    color: var(--texto-marrom);
+    cursor: pointer;
+    padding: 0 15px 10px;
+}
+
+nav li:hover{
+    background: var(--texto-marrom);
+    color: var(--ocre-medio);
+    
+}
+
+nav li:focus{
+    background: var(--texto-marrom);
+    color: var(--ocre-medio);
+}
+
+.caixa-main {
+    /* background: var(--bege); */
+    min-height: 80vh;
+}
+
+.caixa-main ul {
+    
+    padding: 5vh 10vw;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    gap: 5vh 3vw ;
+}
+
+.caixa-main li {    
+    background:  var(--ocre-medio);
+    border: 1px solid var(--texto-marrom) ;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.5); 
+    transition: all 400ms;
+    
+}
+
+.caixa-main li:hover {
+    transform: scale(1.05);
+}
+
+.caixa-main li:focus {
+    transform: scale(1.1);
+}
+
+.caixa-main div {
+    padding: 5px 5px 5px 25px;
+}
+.caixa-main h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--texto-marrom);
+    padding: 0.5em 0 0 0; 
+
+}
+.caixa-main h4 { 
+    color: var(--texto-marrom-medio);
+    padding: 0.4em 0 0 0;
+
+}
+.favorito::before{ 
+    padding: 0.4em 0;     
+    content:'🤍';
+}
+
+.clicado::before {
+    content: '❤️' ;
+}
+
+.caixa-main li img {
+    width: 100%;   
+}
+
+
+
+
+
+
+    
+
+
