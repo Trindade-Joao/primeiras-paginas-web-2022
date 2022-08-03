@@ -7,14 +7,13 @@
     --texto-marrom-medio: #483001;
 }
 
-
 body {
     font-family: 'Poppins', sans-serif;
     padding-top: 200px;
     background: linear-gradient(#f5d4b3 20%, #94c1df 70%, #3c87d5 100%);
-    min-height: 100vh;
-    
+    min-height: 100vh;    
 }
+
 header {
     position: fixed;
     top:0;    
@@ -32,25 +31,22 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-content: center;
-    
-
+    align-content: center; 
 }
+
 .caixa-header img {
     width: 100px; 
     height: 100px;
-    margin:  10px 30px;
-    
-    
+    margin:  10px 30px;   
 }
 
 .caixa-header h1 {
     padding: 25px 0;
     font-size: 4vw;
     color: #FFF;
-    text-shadow: 5px 5px 0 #333;
-    
+    text-shadow: 5px 5px 0 #333;  
 }
+
 nav {
     background: var(--ocre-medio) ;
     /* padding: 0 0 10px 20px;   */
@@ -98,9 +94,7 @@ main{
     border: 1px solid var(--texto-marrom) ;
     border-radius: 5px;
     box-shadow: 0 0 10px 5px rgba(0,0,0,0.5); 
-    padding-bottom: 20px;
-    
-    
+    padding-bottom: 20px;   
 }
 
 .caixa-main li:hover {
@@ -111,33 +105,28 @@ main{
     transform: scale(1.1);
 }
 
-
 .caixa-main h3 {
     font-size: 1.2em;
     font-weight: bold;
     color: var(--texto-marrom);
     padding: 0.5em 0 0 25px; 
-
 }
+
 .caixa-main h4 { 
     color: var(--texto-marrom-medio);
     padding: 0.4em 0 0 25px;
-
 }
 
-.favorito::before{ 
-    
+.favorito::before{     
     margin-left: 20px;
     padding: 5px ;     
     content:'🤍';
     font-size: 1.2em;
-    z-index: 1;
-    
 }
+
 .favorito:hover, .favorito:focus{
     transform: scale(1.3);
 }
-
 
 .clicado::before {
     content: '❤️' ;
@@ -160,7 +149,6 @@ main{
 footer {
     background-image: url('./img/bg_footer.png');
     background-size: cover;
-
     text-align: center;
 }
 
@@ -172,10 +160,46 @@ footer {
 footer p {
     font-size: 0.8em;
     padding: 5px;
-    padding-bottom: 15px;
+    padding-bottom: 15px; 
+}
+
+
+/* ===============================  CSS das páginas de conteudo   ========================================== */
+.pagina_conteudo {
+    width: 75vw;
+    margin: 0 auto
+}
+.pagina_conteudo  h2 {
+    text-align: center;
+    font-family:'Press Start 2P', cursive;
+    color: var(--texto-marrom);
+    font-size: 4vw;
+    padding: 25px;
+}
+.conteudo-banner{
+    margin: 15px 0 40px 0;
+}
+.pagina_conteudo p {
+    font-size: 1.2em;
+    padding: 1em 0;
+}
+
+.conteudo-capa {
+    width: 30vw;
+    float: right;
+    margin: 20px 0 20px 20px;
     
 }
 
+.video {
+    width: 560px;
+    margin: 50px auto;
+}
+
+
+
+
+/*========================================== CSS Mobile ====================================================*/
 
 @media screen and (max-width: 400px) {
 
@@ -183,7 +207,6 @@ footer p {
         width: 80px;
         height: 80px;
         margin: 15px
-
     }
     
     .caixa-header h1 {
@@ -191,7 +214,6 @@ footer p {
         font-size: 9vw;
         color: #FFF;
         text-shadow: 5px 5px 0 #333;
-        
     }
 
     .caixa-main ul {
@@ -201,7 +223,6 @@ footer p {
         display: grid;
         grid-template-columns: 1fr ;
         justify-items: center;
-        
     }
 
     ul {
@@ -219,6 +240,18 @@ footer p {
         margin:3px
     }
 
+    .logo_footer {
+        width: 90px;
+    }
+
+    .pagina_conteudo {
+        width: 90vw;
+        margin: 0 auto
+    }
+
+    .video{
+        width: auto;
+    }
     
 }
 
