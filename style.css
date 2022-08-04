@@ -205,7 +205,10 @@ footer p {
 /*========================================== CSS Mobile ====================================================*/
 
 @media screen and (max-width: 400px) {
-
+    body{
+        margin-top: 50px;
+    }
+    
     .logo_cabecalho {
         width: 80px;
         height: 80px;

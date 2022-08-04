@@ -1,6 +1,6 @@
-const listaBotoesFavoritos = document.querySelectorAll('.favorito')
+const listaBotoesFavoritos = document.querySelectorAll('.favorito');
 const listaClassificacao = document.querySelectorAll('[data-classificacao]');
-const listaConteudo = document.querySelectorAll('[data-conteudo]')
+const listaConteudo = document.querySelectorAll('[data-conteudo]');
 
 
 
@@ -26,7 +26,7 @@ limpaBarraClassificacao = () => {
 }
 
 selecionaItemBarraClassificacao = (classificacao) => {
-    classificacao.classList.add('ativa')
+    classificacao.classList.add('ativa');
 }
 
 selecionaConteudoMostrado = (valor) => {
@@ -49,7 +49,7 @@ selecionaConteudoMostrado = (valor) => {
 listaClassificacao.forEach(classificacao => classificacao.addEventListener('click', () => {
     const valor = classificacao.dataset.classificacao;
 
-    console.log(valor);
+    
     desativaConteudos();
     limpaBarraClassificacao();
     selecionaItemBarraClassificacao(classificacao);
